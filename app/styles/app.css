@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300|PT+Sans|Roboto:300|Lato:300);
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato';
+  font-weight: 300;
+  color: #071013;
+}
+
+.row {
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+button {
+  background: #fff;
+  border: 2px solid #3ea9f5;
+  color: #3ea9f5;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.nav-bar-app {
+  background: #3ea9f5;
+  margin-bottom: 2em;
+}
+
+.nav-bar-app ul {
+  display: flex;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-bar-app a {
+  display: inline-block;
+  color: #fff;
+  font-size: .75em;
+  padding: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.hello-fname {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.stock-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stock-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 350px;
+  background: #A2AEBB;
+  border-radius: .5em;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  color: #fff;
+  margin: 1em;
+}
+
+.stock-card > div {
+  margin-bottom: 1em;
+}
+
+.change-data-btn {
+  /*margin-left: 1em;*/
+}

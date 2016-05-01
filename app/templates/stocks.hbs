@@ -1,0 +1,30 @@
+<div class="row">
+
+<h1>Stocks</h1>
+<button {{action "changeData"}} type="button" name="button" class="change-data-btn">Change Data</button>
+<button {{action "deleteData"}} type="button" name="button" class="delete">Delete</button>
+<div class="stock-card-wrapper">
+
+  {{#if isEverythingShown}}
+
+    {{#each stocksArr as |stock|}}
+      {{display-stock
+        stockName=stock.name
+        stockPrice=stock.currentPrice
+        stockSymbol=stock.symbol
+
+        actionToDo=(action 'secretThing')
+      }}
+    {{/each}}
+
+  {{else}}
+
+    <h2>We are working with just {{singleStockName}} right now</h2>
+
+  {{/if}}
+
+</div>
+</div>
+
+
+{{!-- {{outlet}} --}}
